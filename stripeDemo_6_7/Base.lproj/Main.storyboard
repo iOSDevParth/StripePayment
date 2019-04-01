@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="stripeDemo_6_7" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rMj-hh-ItO">
+                                <rect key="frame" x="30" y="50" width="315" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Card Number" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rtX-fU-ul2">
+                                <rect key="frame" x="30" y="110" width="315" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="MM/YY" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SAA-2V-AU5">
+                                <rect key="frame" x="30" y="170" width="315" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="CVC" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Rke-Mj-c8J">
+                                <rect key="frame" x="30" y="230" width="315" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="$ ..." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="iRO-GF-D2M">
+                                <rect key="frame" x="30" y="290" width="315" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h2S-A9-sPZ">
+                                <rect key="frame" x="30" y="350" width="315" height="36"/>
+                                <color key="backgroundColor" red="0.0" green="0.67450980390000004" blue="0.92549019610000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                                <state key="normal" title="Send">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="payWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SZQ-Am-iIb"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="iRO-GF-D2M" firstAttribute="top" secondItem="Rke-Mj-c8J" secondAttribute="bottom" constant="30" id="03G-wd-rI1"/>
+                            <constraint firstItem="Rke-Mj-c8J" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="30" id="3WK-lX-Bdd"/>
+                            <constraint firstAttribute="trailing" secondItem="SAA-2V-AU5" secondAttribute="trailing" constant="30" id="5QS-fI-bR5"/>
+                            <constraint firstItem="Rke-Mj-c8J" firstAttribute="top" secondItem="SAA-2V-AU5" secondAttribute="bottom" constant="30" id="6KJ-hf-QXS"/>
+                            <constraint firstItem="rtX-fU-ul2" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="30" id="8o4-oU-esM"/>
+                            <constraint firstAttribute="trailing" secondItem="iRO-GF-D2M" secondAttribute="trailing" constant="30" id="Anj-v5-MZn"/>
+                            <constraint firstItem="iRO-GF-D2M" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="30" id="KFA-vY-mKI"/>
+                            <constraint firstItem="h2S-A9-sPZ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="30" id="L0j-BS-yvx"/>
+                            <constraint firstItem="rMj-hh-ItO" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="30" id="SEp-cZ-4Pi"/>
+                            <constraint firstItem="rtX-fU-ul2" firstAttribute="top" secondItem="rMj-hh-ItO" secondAttribute="bottom" constant="30" id="Wwv-EV-iO0"/>
+                            <constraint firstItem="h2S-A9-sPZ" firstAttribute="top" secondItem="iRO-GF-D2M" secondAttribute="bottom" constant="30" id="YYt-5D-epI"/>
+                            <constraint firstItem="SAA-2V-AU5" firstAttribute="top" secondItem="rtX-fU-ul2" secondAttribute="bottom" constant="30" id="hNg-gm-J57"/>
+                            <constraint firstAttribute="trailing" secondItem="Rke-Mj-c8J" secondAttribute="trailing" constant="30" id="k17-yp-pEG"/>
+                            <constraint firstAttribute="trailing" secondItem="rMj-hh-ItO" secondAttribute="trailing" constant="30" id="l3p-jg-Q1d"/>
+                            <constraint firstItem="SAA-2V-AU5" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="30" id="mmU-cV-aj5"/>
+                            <constraint firstAttribute="trailing" secondItem="rtX-fU-ul2" secondAttribute="trailing" constant="30" id="sPh-HF-arD"/>
+                            <constraint firstAttribute="trailing" secondItem="h2S-A9-sPZ" secondAttribute="trailing" constant="30" id="vD3-tf-hea"/>
+                            <constraint firstItem="rMj-hh-ItO" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="30" id="y8u-yM-cVi"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="amountTextField" destination="iRO-GF-D2M" id="xa9-DE-WD1"/>
+                        <outlet property="cardNumberTextField" destination="rtX-fU-ul2" id="1IM-pM-czD"/>
+                        <outlet property="cvcTextField" destination="Rke-Mj-c8J" id="Wmj-mc-suJ"/>
+                        <outlet property="emailTextField" destination="rMj-hh-ItO" id="hvS-1Z-yhl"/>
+                        <outlet property="expireDateTextField" destination="SAA-2V-AU5" id="qrS-hl-TE2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
